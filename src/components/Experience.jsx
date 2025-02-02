@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+// import Portfolio from "./Portfolio";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -63,9 +64,10 @@ const Experience = () => {
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
+        <h2 className={`${styles.sectionHeadText} text-center `}>
           Work Experience.
         </h2>
+        
       </motion.div>
 
       <div className='mt-20 flex flex-col'>
@@ -77,6 +79,7 @@ const Experience = () => {
             />
           ))}
         </VerticalTimeline>
+       
       </div>
     </>
   );
