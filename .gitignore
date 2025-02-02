@@ -7,23 +7,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
+*.local/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Build output
+build/
+
+# OS-generated files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
 
+# IDE directories and files
+.vscode/
+.idea/
+
+# JetBrains project files
+*.iml
+
+# Environment files
 .env
+.env.local
+.env.*.local
 
-# vscode
-.vscode
+# npm package lock files (if using yarn or pnpm, you may want to ignore these too)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# vscode specific
+.vscode/
